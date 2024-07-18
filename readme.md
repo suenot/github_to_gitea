@@ -6,18 +6,22 @@ This tool automates the process of mirroring GitHub repositories to Gitea using 
 ## Installation
 Before running the tool, ensure you have Node.js and npm installed on your machine.
 
-1. Clone the repository:
+1. Get [personal access github token](https://github.com/settings/tokens)
+
+2. Get personal access gitea token
+
+3. Clone the repository:
    ```
    git clone https://github.com/suenot/github_to_gitea
    cd github_to_gitea
    ```
 
-2. Install dependencies:
+4. Install dependencies:
    ```
    npm install
    ```
 
-3. Set up environment variables:
+5. Set up environment variables:
    Create a `.env` file in the root directory and define the following variables:
    ```
    GITHUB_TOKEN=your-github-token
@@ -37,7 +41,7 @@ Before running the tool, ensure you have Node.js and npm installed on your machi
 ## Usage
 To run the tool, execute:
 ```
-npm start
+npm run build && npm run start
 ```
 
 Or for development with TypeScript:
